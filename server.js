@@ -104,7 +104,7 @@ async function sendEmails(leadData) {
       <p><strong>Message:</strong> ${leadData.message || 'None provided'}</p>
       
       <hr>
-      <p><em>Submitted on: ${new Date().toLocaleString()}</em></p>
+      <p><em>Submitted on: ${new Date().toLocaleString()} GMT</em></p>
     `,
   });
 
