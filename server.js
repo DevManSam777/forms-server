@@ -148,6 +148,16 @@ app.post("/api/form/submit", async (req, res) => {
   }
 });
 
+// View submissions
+app.get("/api/leads", async (req, res) => {
+  try {
+    const leads = await Lead.find().sort({ createdAt: -1 }).limit(50);
+    res.json(leads);
+  } catch (error) {
+    res.status(500).json({ error: "Failed to fetch leads" });
+  }
+});
+
 // Start server
 const PORT = process.env.PORT || 3001;
 app.listen(PORT, () => {
