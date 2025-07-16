@@ -425,6 +425,12 @@ Visit `http://localhost:3001/api/leads` to see all form submissions in JSON form
 
 For production: `https://your-forms-service.onrender.com/api/leads`
 
+## License
+
+[LICENSE](LICENSE)  
+
+Copyright (c) 2025 DevManSam
+
 
 ## Need a Form?
 
@@ -434,3 +440,4 @@ https://github.com/DevManSam777/web_inquiry_form
 
 
 #### Thanks for stopping by!
+
