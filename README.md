@@ -194,6 +194,9 @@ app.listen(PORT, () => {
 ```
 
 ### 3. **.env**
+
+There is an example.env file that you can use for reference
+
 ```bash
 MONGODB_URI=mongodb+srv://yourusername:yourpassword@cluster0.abc123.mongodb.net/forms?retryWrites=true&w=majority
 EMAIL_HOST=smtp.gmail.com
@@ -204,6 +207,14 @@ ADMIN_EMAIL=admin@yourdomain.com
 PORT=3001
 ```
 
+
+### 4. **.gitignore**
+
+  Add your .env in this so that it is not included in your version control
+
+  ```bash
+  .env
+  ```
 ---
 
 ## Setup Instructions
