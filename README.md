@@ -1,4 +1,4 @@
-# Forms Service
+# Forms Server
 
 Simple form handler with email notifications. Just 3 files.
 
