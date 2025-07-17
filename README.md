@@ -352,7 +352,7 @@ git push -u origin main
    - **Build Command:** `npm install`
    - **Start Command:** `npm start`
   
-   - **Tip: Render sites on the free tier spin down after 15 minutes of inactivity.  Either use a paid plan, or set up a cron job to send an http request every 14:59 minutes or less.  A good free resource is https://cron-job.org .**
+   _Tip: Render sites on the free tier spin down after 15 minutes of inactivity.  Either use a paid plan, or set up a cron job to send an http request every 14:59 minutes or less.  A good free resource is https://cron-job.org ._
 
 ### Step 3: Set Environment Variables
 In Render dashboard, add these environment variables:
