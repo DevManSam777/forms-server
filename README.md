@@ -341,7 +341,6 @@ git branch -M main
 git remote add origin https://github.com/yourusername/forms.git
 git push -u origin main
 ```
-- Tip: Render sites on the free tier spin down after 15 minutes of inactivity.  Either use a paid plan, or set up a cron job to send an http request every 14:59 minutes or less.  A good free resource is https://cron-job.org .
 
 ### Step 2: Deploy on Render
 1. Go to https://render.com and sign up/login
@@ -352,6 +351,8 @@ git push -u origin main
    - **Environment:** `Node`
    - **Build Command:** `npm install`
    - **Start Command:** `npm start`
+  
+   - **Tip: Render sites on the free tier spin down after 15 minutes of inactivity.  Either use a paid plan, or set up a cron job to send an http request every 14:59 minutes or less.  A good free resource is https://cron-job.org .**
 
 ### Step 3: Set Environment Variables
 In Render dashboard, add these environment variables:
