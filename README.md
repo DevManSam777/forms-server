@@ -58,7 +58,7 @@ mongoose.connect(process.env.MONGODB_URI);
 
 // Email functions
 function createEmailTransporter() {
-  return nodemailer.createTransport({
+  return nodemailer.createTransporter({
     host: process.env.EMAIL_HOST,
     port: parseInt(process.env.EMAIL_PORT),
     secure: false,
@@ -273,8 +273,15 @@ Should return: `{"status":"OK"}`
 
 ### Step 1: Include the Web Component
 Add this script tag to your HTML:
+
+**For the full web inquiry form:**
 ```html
 <script src="https://raw.githack.com/DevManSam777/web_inquiry_form/main/web-inquiry-form.js" defer></script>
+```
+
+**For the minimalist contact form:**
+```html
+<script src="https://raw.githack.com/DevManSam777/minimalist-contact-form/main/contact-form.js" defer></script>
 ```
 
 ### Step 2: Use the Form Component
@@ -285,9 +292,19 @@ Point your web component to use the forms service:
 <web-inquiry-form api-url="http://localhost:3001/api/form/submit"></web-inquiry-form>
 ```
 
+**Or for the minimalist form:**
+```html
+<contact-form endpoint="http://localhost:3001/api/form/submit"></contact-form>
+```
+
 **Production:**
 ```html
 <web-inquiry-form api-url="https://your-forms-service.onrender.com/api/form/submit"></web-inquiry-form>
+```
+
+**Or for the minimalist form:**
+```html
+<contact-form endpoint="https://your-forms-service.onrender.com/api/form/submit"></contact-form>
 ```
 
 **With theme options:**
@@ -440,6 +457,9 @@ Here is a link to a form web component I created that you can easily add to any 
 
 https://github.com/DevManSam777/web_inquiry_form
 
+For a simpler contact form:
+
+https://github.com/DevManSam777/minimalist-contact-form
+
 
 #### Thanks for stopping by!
-
